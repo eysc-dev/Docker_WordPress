@@ -28,3 +28,31 @@ define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password'
 define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') ); /*msql 改成 databases:3306*/
 
 ```
+
+要將本地檔案上傳到 GitHub，你可以按照以下步驟操作：
+
+1. 打開終端機或命令提示字元，導航到你的專案目錄，然後執行以下命令來初始化 Git 儲存庫：
+     ```
+     git init
+     ```
+
+2. 將所有檔案新增到 Git 儲存庫中：
+     ```bash
+     git add .
+     ```
+
+3. 提交變更並添加提交訊息：
+     ```
+     git commit -m "Initial commit"
+     ```
+
+4. 將你的本地儲存庫連接到 GitHub 上的遠端儲存庫。假設你的遠端儲存庫 URL 是 `https://github.com/yourusername/your-repo.git`，你可以使用以下命令：
+     ```
+     git remote add origin https://github.com/yourusername/your-repo.git
+     ```
+
+5. 將本地儲存庫的變更推送到 GitHub 上的遠端儲存庫：
+     ```
+     git push -u origin main
+     ```
+
