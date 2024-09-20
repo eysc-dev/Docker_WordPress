@@ -3,9 +3,9 @@
 在CMD下載 MariaDB `docker pull mariadb:10.6.19-focal` 
 <br>
 在CMD下載 WordPress `docker pull wordpress:6.6.2-apache`
-<br>
+<br><br>
 更新任何configure files必須重啟docker `docker compose down` -> `docker compose up`
-<br>
+<br><br>
 wp-config.php中，要改你phpadmin user name & password，他們在.env的檔案中，你自己設定的
 ```
 // ** Database settings - You can get this info from your web host ** //
