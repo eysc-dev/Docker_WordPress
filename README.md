@@ -8,11 +8,11 @@
 <br><br>
 wp-config.php中，要改你phpadmin user name & password，他們在.env的檔案中，你自己設定的
 ```
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+//* Database settings - You can get this info from your web host *//
+/* The name of the database for WordPress */
 define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
 
-/** Database username */
+/* Database username */
 define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', 'example username') );
 
 /** Database password */
@@ -24,7 +24,7 @@ define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', 'example password'
  * (However, using "example username" and "example password" in your database is strongly discouraged.  Please use strong, random credentials!)
  */
 
-/** Database hostname */
+/* Database hostname */
 define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') ); /*msql 改成 databases:3306*/
 
 ```
